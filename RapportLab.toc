@@ -1,11 +1,11 @@
 \contentsline {chapter}{Sammendrag}{2}
-\contentsline {chapter}{Innledning}{3}
-\contentsline {chapter}{Utstyr og metoder}{4}
-\contentsline {section}{Utstyr}{4}
-\contentsline {section}{Metode}{4}
-\contentsline {subsection}{Forberedelse}{4}
-\contentsline {subsection}{Fors\IeC {\o }k}{5}
-\contentsline {chapter}{Resultater og diskusjon}{6}
-\contentsline {section}{Resultater}{6}
-\contentsline {section}{Diskusjon og feilkilder}{7}
-\contentsline {chapter}{Konklusjon}{8}
+\contentsline {chapter}{Innledning}{2}
+\contentsline {chapter}{Utstyr og metoder}{3}
+\contentsline {section}{Utstyr}{3}
+\contentsline {section}{Metode}{3}
+\contentsline {subsection}{Forberedelse}{3}
+\contentsline {subsection}{Fors\IeC {\o }k}{4}
+\contentsline {chapter}{Resultater og diskusjon}{5}
+\contentsline {section}{Resultater}{5}
+\contentsline {section}{Diskusjon og feilkilder}{6}
+\contentsline {chapter}{Konklusjon}{7}
