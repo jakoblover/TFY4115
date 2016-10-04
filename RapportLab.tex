@@ -4,30 +4,37 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{tabto}
+\usepackage{tocloft}
 \usepackage[margin=1in]{geometry}
 \author{Finn Matras, Jakob Løver}
-\title{{\LARGE TFY4115}\\{\large Lab 1}}
+\title{{\LARGE TFY4115}\\{\large Lab 1, Friksjon på skråplan}}
 \begin{document}
+\renewcommand{\contentsname}{Innhold}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}}
 
 \maketitle
+\tableofcontents
+%\chapter*{Innhold}
+%\begin{itemize}
+%\item Sammendrag \tab{1}			
+%\item Innledning \tab{2}
+%\item Teori      \tab{3}
+%\item Eksperimentelt \tab{4}
+%\item Resultater og diskusjon \tab{5}
+%\item Konklusjon \tab{6}
+%\end{itemize}
 
-\chapter*{Innhold}
-\begin{itemize}
-\item Sammendrag
-\item Innledning
-\item Teori
-\item Eksperimentelt
-\item Resultater og diskusjon
-\item Konklusjon
-\end{itemize}
-
-\chapter*{Sammedrag}
-I dette forsøket var formålet å finne friksjon mellom to ulike stoffer og et skråplan, for at man skal kunne regne seg fram til en den horisontale vinkelen til skråplanet som gjør at et system bestående av to masser på et gitt underlag sklir med konstant hanstighet ned skråplanet.\\
-\\For å finne friksjonskoeffisienten bruke vi videoanalyse-programvaren Tracker og et høyhastighetskamera for å analysere bevegelsen til klossene nedover langs skråplanet. I Tracker kunne vi lese av akselerasjonen til klossen, og ved hjelp av Newtons II lov kunne vi regne oss frem til friksjonskoeffisienten til underlagene. Målingene ble gjenntatt flere ganger for å verifisere og ta høyde for usikkerhet.\\
-\\Vi fant ut at friksjonskoeffisienten mellom sykkelsete-stoff (Figur: 1) og skråplanet i tre var: s234234234234, og at friksjonskoeffisienten mellom plast og tre (Figur: 2) var:234234
+\chapter*{Sammendrag}
+\addcontentsline{toc}{chapter}{Sammendrag}
+I dette forsøket ble friksjonskoeffisienter til to uklike stoffer funnet, for at man skal kunne regne seg fram til en den horisontale vinkelen til skråplanet som gjør at et system bestående av to masser sklir med konstant hanstighet ned skråplanet.\\
+\\For å finne friksjonskoeffisienten bruke vi videoanalyse-programvaren Tracker og et høyhastighetskamera for å analysere bevegelsen til klossene. I Tracker kunne vi lese av akselerasjonen til klossen, og ved hjelp av Newtons II lov kunne vi regne oss frem til friksjonskoeffisienten til underlagene. Målingene ble gjenntatt flere ganger for å verifisere og ta høyde for usikkerhet.\\
+\\Vi fant ut at friksjonskoeffisienten mellom sykkelsete-stoff (Figur: 1) og skråplanet i tre var: 0,232, og at friksjonskoeffisienten mellom plast og tre (Figur: 2) var: 0,270.
 
 
 \chapter*{Innledning}
+\addcontentsline{toc}{chapter}{Innledning}
 \begin{figure}[p]
     \includegraphics[scale=0.05]{BlaaPlast}
     \caption{Blå plast, friksjonskoeffisient: 234324324}
@@ -39,10 +46,10 @@ I dette forsøket var formålet å finne friksjon mellom to ulike stoffer og et 
     \label{fig:2}
 \end{figure}
 \section*{Teori}
-Basert på Newtons II low (2) 
+Basert på Newtons II lov som i likning (2): 
 \begin{equation}
-\sum{F} = m*a
-\end{equation} så kan vi regne ut kreftene som er tilstede på en masse. 
+\sum{F} = m*a,
+\end{equation} der $F$ er kraften, $m$ er massen, og $a$ er akselerasjonen, så kan vi regne ut kreftene som er tilstede på en masse. Hvis $a$ er 0, så får man likning (2) for klossene i figur 3. 
 \begin{equation}
 F = \mu *F_n
 \end{equation}
@@ -58,7 +65,9 @@ Ved hjelp av likning (1) kan man så regne seg fram til vinkelen, $\theta$, som 
 \\I dette forsøket var formålet å bli kjent med hvordan man utfører forsøk i fysikken, og å bli kjent med hvordan man skriver lab-journal og rapport. Vi har lært mye om usikkerhet og hvordan feil i det tekniske utstyret kan føre til følgefeil. Videre har vi også lært oss hvordan vi bør føre journal for at vi eller andre i etterkant selv skal kunne gjennomføre forsøket på nytt.
 
 \chapter*{Utstyr og metoder}
+\addcontentsline{toc}{chapter}{Utstyr og metoder}
 \section*{Utstyr}
+\addcontentsline{toc}{section}{Utstyr}
 \begin{itemize}
 \item Skråplan av tre
 \item Klosser i messing og aluminium
@@ -72,12 +81,15 @@ Ved hjelp av likning (1) kan man så regne seg fram til vinkelen, $\theta$, som 
 \item Lærertyggis
 \end{itemize}
 \section*{Metode}
+\addcontentsline{toc}{section}{Metode}
 \subsection*{Forberedelse}
+\addcontentsline{toc}{subsection}{Forberedelse}
 Oppsettet til laben er illustrert i Figure \ref{oppsett}. Treplanken er festet til labstativet med en klype, noe som skaper et skråplan. Vi har brukt vater for å få riktige målinger. Foran oppsettet ligger deg en meterstokk, noe som gjør det enkelt å kalibrere oppsettet i Tracker. Høyhastighetskameraet er montert normalt på oppsettet, slik at vinkling på kameraet ikke påvirker størrelsene vi måler. De forskjellige underlagene ble festet på klossene ved hjelp av lærertyggis.\\
 \\For å forberede oss til laben kalkulerte vi først ut likningene vi kom til å bruke under laben, som er beskrevet under seksjonen "Teori." Vi lagde deretter et spreadsheet hvor vi plugget inn alle likningene og størrelsene våre. Dette gjorde at vi kunne enkelt gjøre mange kalkulasjoner av gangen uten å måtte bruke kalkulator for hver gang. Vi stilte inn innstillingene på høyhastighetskameraet tilpasset lysforholdene på laben. Dette resulterte i at vi brukte 100fps fordi det gav best resultater i Tracker.\\
 \\En rekke eksperimenter ble fullført for å verifisere at utstyret vårt fungerte. Ved hjelp av en vekt målte vi de to massenes vekt tre ganger. Vi brukte gjennomsnittet av de tre målingene for å være sikre på at vi hadde fått representative tall. Deretter slapp vi en av vektene foran en hvit vegg mens vi filmet med kameraet. Dette importerte vi i Tracker, og ved hjelp av regresjonsfunksjonen i programmet kunne vi verifisere integriteten da vi målte 9.81 m/s$^2$ som aksellerasjon.
 
 \subsection*{Forsøk}
+\addcontentsline{toc}{subsection}{Forsøk}
 Forsøket ble gjennomført ved å først stille inn skråplanet til riktig vinkel. Med en linjal målte vi lengden og høyden av skråplanet, og brukte den inverse tangensen for å kalkulere vinkelen til skråplanet. Når kameraet rullet, slapp vi messingklossen 4 ganger nedover skråplanet. Dette importerte vi i Tracker for å beregne akselerasjon. Ved hjelp av regnearket vårt og formlene definert ovenfor, regnet vi oss fram til friksjonskoeffesienten for klossen. Dette gjentok vi med aluminiumsklossen, og deretter med både sykkelstoffbiten og plastikkbiten som underlag. \\
 \\Friksjonskoeffesientene for underlagene vi valgte brukte vi til å beregne oss frem til den optimale vinkelen hvor begge klossene ville skli med konstant hastighet, som beskrevet i "Teori" seksjonen. Klossene ble bundet sammen med en tråd, og sluppet ned skråplanet. Dette forsøket ble også tatt opp ved hjelp av Tracker hvor vi målte en neglisjerbar akselerasjon, noe som bekreftet beregningene våre om optimal vinkel.\\
 \\Til slutt ble vi bedt om å kalkulere optimal vinkel da det ble lagt til ulik masse på hver av klossene. Da vi allerede hadde kalkulert friksjonskoeffesientene til underlagene i de forrige eksperimentene, kunne vi enkelt kalkulere vinkelen med de samme formlene. Denne gangen målte vi også en neglisjerbar akselerasjon.
@@ -89,7 +101,9 @@ Forsøket ble gjennomført ved å først stille inn skråplanet til riktig vinke
 \end{figure}
 
 \chapter*{Resultater og diskusjon}
+\addcontentsline{toc}{chapter}{Resultater og diskusjon}
 \section*{Resultater}
+\addcontentsline{toc}{section}{Resultater}
 Nedenfor er resultatene vi fikk ved å bruke Tracker til å finne akselerasjonen til klossene, og usikkerheten til disse målingene.
 \begin{center}
   \begin{tabular}{| c | c | c | c | c | c |}
@@ -177,9 +191,11 @@ Testing av utregnede verdier på et massesystem som vist i illustrason 32432423 
 \end{center}
 
 \section*{Diskusjon og feilkilder}
+\addcontentsline{toc}{section}{Diskusjon og feilkilder}
 Som vi ser i resultatene ovenfor, så ga alle de teoretisk utregnede verdiene en vinkel som var for stor, noe som førte til at klossene akselererte nedover skråplanet. En feilkilde som ble observert mens vi gjennomførte disse testene som hadde ensten konstant hastighet var at klossene beveget seg litt hakkete nedover skråplanet. Dette er mest sannsynlig forårsaket ved at skråplanet ikke har helt monoton overflate, noe som gjør at klossene og friksjonskoeffisientene endrer seg underveis. Vi klarte heller ikke å slippe klossene ned på akuratt samme sted, da skråplanet var forholdsvis bredt, og overflaten kan også være forskjellig i bredden, noe som kan ha forårsaket feil i målingne. Ut ifra likningen ser man også at vinkelen, $\theta$ har mye å si, og dette merket vi også i starten da vi gjorde noen initielle målinger. Det at vi bruke et vater til å finne nøyaktig horisontal posisjon var svært viktig, men her kan det fortsatt være en del usikkerhet, med tanke på hvordan det ble overført til Tracker. \\
 \\På måling 13 til 16 ser vi også at friksjonskoeffisienten er en del større, enn den er på måling 9 til 12. Her har vi både endret massen, og vinkelen. Vel å merke her er at det er forskjell på friksjon avhengig av forskjellen i hastighet mellom de to underlagene. Det vil si at det for plast-stoffet var en annen friksjonskoeffisient ved høyere hastigheter enn ved lavere hastigheter. Det vil si at det kunne vært lurt å prøve seg fram til den vinkelen der det er konstant hastighet eksperimentelt, og så analysere akselerasjonen ved den funnede vinkelen for å finne friksjonskoeffisienten slik den er i nærheten av den hastigheten som den kommer til å bli utsatt for.\\
 \\En annen ting vi merket vålingene som vi gjorde helt i starten av en kloss i fritt fall, var at selv om klossen falt fritt, så stemte ikke alltid akselerasjonsverdiene som vi fikk ved regresjonen i Tracker. Det vi så var at disse verdiene lå i nærheten av det vi skulle forvente, men at verdiene hadde en usikkerhet på rundt $\pm 20 prosent$. Derfor valgte vi å ta totalt 8 målinger av hver stofftype, men for enda mer presise resultater kunne det blitt gjort en rekke flere målinger.
 \chapter*{Konklusjon}
+\addcontentsline{toc}{chapter}{Konklusjon}
 Hypotesen vår var at vi ville klare å kalkulere optimal vinkel for konstant akselerasjon, noe vi kan konkludere med at vi klarte. Det var en del feilkilder som gjorde at resultatene våre ikke ble slik vi håpet på som beskrevet i seksjonen over. Vi opplevde ofte at vi fikk en for høy vinkel da vi kalkulerte vinkelen, noe vi så var et gjengående moment hos de andre gruppene. Etter å ha sammenliknet friksjonskoeffisientene til underlagene med nettet, kan vi også konkludere at vi klarte dette. Utfordringen hvor vi ble bedt om å finne vinkel til to forskjellige masser med eget valg av friksjonsunderlag klarte vi også å bestå, dog med samme problem hvor vi måtte senke planet med et par graders avvik fra beregningene våre. 
 \end{document}
