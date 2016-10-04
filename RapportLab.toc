@@ -1,9 +1,17 @@
 \contentsline {chapter}{Sammendrag}{2}
+<<<<<<< HEAD
 \contentsline {chapter}{Innledning}{3}
 \contentsline {chapter}{Utstyr og metoder}{5}
 \contentsline {subsection}{Forberedelse}{5}
+=======
+\contentsline {chapter}{Utstyr og metoder}{4}
+\contentsline {section}{Utstyr}{4}
+\contentsline {chapter}{Innledning}{4}
+\contentsline {section}{Metode}{4}
+\contentsline {subsection}{Forberedelse}{4}
+>>>>>>> Lab1
 \contentsline {subsection}{Fors\IeC {\o }k}{5}
-\contentsline {chapter}{Resultater og diskusjon}{7}
-\contentsline {section}{Resultater}{7}
-\contentsline {section}{Diskusjon og feilkilder}{8}
-\contentsline {chapter}{Konklusjon}{9}
+\contentsline {chapter}{Resultater og diskusjon}{6}
+\contentsline {section}{Resultater}{6}
+\contentsline {section}{Diskusjon og feilkilder}{7}
+\contentsline {chapter}{Konklusjon}{8}
