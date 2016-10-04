@@ -1,7 +1,7 @@
 \contentsline {chapter}{Sammendrag}{2}
+\contentsline {chapter}{Innledning}{3}
 \contentsline {chapter}{Utstyr og metoder}{4}
 \contentsline {section}{Utstyr}{4}
-\contentsline {chapter}{Innledning}{4}
 \contentsline {section}{Metode}{4}
 \contentsline {subsection}{Forberedelse}{4}
 \contentsline {subsection}{Fors\IeC {\o }k}{5}
