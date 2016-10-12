@@ -83,13 +83,13 @@ Et skjematisk oppsett av eksperimentet er vist i Figure \ref{oppsett}. Treplanke
 
 \subsection*{Forsøk}
 \addcontentsline{toc}{subsection}{Forsøk}
-Forsøket ble gjennomført ved å først stille inn skråplanet til en vilkårlig vinkel. Med en linjal målte vi lengden og høyden av skråplanet, og brukte den inverse tangensen for å kalkulere vinkelen til skråplanet. Når kameraet rullet, slapp vi messingklossen 4 ganger nedover skråplanet. Dette importerte vi i Tracker for å beregne akselerasjon. Ved hjelp av regnearket vårt og formlene definert ovenfor, regnet vi oss fram til friksjonskoeffesienten for klossen. Dette gjentok vi med aluminiumsklossen, og deretter med både nylonbiten og plastbiten som underlag. \\
-\\Friksjonskoeffesientene for underlagene vi valgte brukte vi til å beregne oss frem til den optimale vinkelen hvor begge klossene ville skli med konstant hastighet, som beskrevet i "Teori" seksjonen. Klossene ble bundet sammen med en tråd, og sluppet ned skråplanet. Dette forsøket ble også tatt opp ved hjelp av Tracker hvor vi målte en neglisjerbar akselerasjon, noe som bekreftet beregningene våre om optimal vinkel.\\
-\\Til slutt ble vi bedt om å kalkulere optimal vinkel da det ble lagt til 10g og 50g på hver av klossene. Da vi allerede hadde kalkulert friksjonskoeffesientene til underlagene i de forrige eksperimentene, kunne vi enkelt kalkulere vinkelen med de samme formlene. Denne gangen målte vi også en neglisjerbar akselerasjon.
+Forsøket ble gjennomført ved å først stille inn skråplanet til en vilkårlig vinkel. Med en linjal ble det tatt målinger av lengden og høyden av skråplanet, og brukte den inverse tangensen for å kalkulere vinkelen. Messingklossen ble sluppet 4 ganger nedover skråplanet, og importert i Tracker for å tilpasse akselerasjon. Ved hjelp av regnearket vårt og formlene definert ovenfor, ble friksjonskoeffesienten for klossen kalkulert. Dette ble gjentatt med aluminiumsklossen, og deretter med både nylonbiten og plastbiten som underlag. \\
+\\De kalkulerte friksjonskoeffesientene for underlagene ble brukt til å beregne den vinkelen hvor begge klossene sklei ned med konstant hastighet. Klossene ble bundet sammen med en snor, og sluppet ned skråplanet. Tracker genererte en regresjon med en neglisjerbar akselerasjon, som bekreftet antagelsene. Dette gjøres med et gjenkjenningssystem i Tracker som automatisk gjenkenner klossene nedover skråplanet, og lager en punktgraf som kan brukes til å tilpasse en regresjon av typen andreordens polynom.\\
+\\Til slutt ble optimal vinkel kalkulert med 10g vekter og 50g vekter lagt på hver av klossene. Da friksjonskoeffesientene var til underlagene var funnet i de forrige eksperimentene, ble vinkelen kalkuklert med de samme formlene. Denne gangen ble det også målt kun en neglisjerbar akselerasjon.
 
 
 \begin{figure}
-\centerline{\includegraphics[scale=0.5]{oppsett}}
+\centerline{\includegraphics[scale=0.5]{withforces}}
 \caption{Illustrasjon av oppsettet.}
 \label{oppsett}
 \end{figure}
