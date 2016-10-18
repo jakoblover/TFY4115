@@ -1,9 +1,10 @@
 \contentsline {chapter}{Sammendrag}{2}{chapter*.1}
 \contentsline {chapter}{Innledning}{2}{chapter*.2}
-\contentsline {chapter}{Metoder og eksperiment}{4}{chapter*.4}
-\contentsline {section}{Metode}{4}{section*.5}
-\contentsline {subsection}{Forberedelse}{4}{section*.6}
-\contentsline {subsection}{Fors\IeC {\o }k}{4}{section*.9}
+\contentsline {chapter}{Teori}{2}{chapter*.3}
+\contentsline {chapter}{Metoder og eksperiment}{4}{chapter*.5}
+\contentsline {section}{Metode}{4}{section*.6}
+\contentsline {subsection}{Forberedelse}{4}{section*.7}
+\contentsline {subsection}{Fors\IeC {\o }k}{4}{section*.10}
 \contentsline {chapter}{Resultater og diskusjon}{5}{chapter*.11}
 \contentsline {section}{Resultater}{5}{section*.12}
 \contentsline {section}{Diskusjon og feilkilder}{6}{section*.13}

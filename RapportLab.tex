@@ -32,16 +32,16 @@
 
 \chapter*{Sammendrag}
 \addcontentsline{toc}{chapter}{Sammendrag}
-Formålet med laben var å regne seg frem til den horisontale vinkelen til et skråplan som gjør at et system bestående av to masser sklir med konstant hastighet.\\
-\\For å finne friksjonskoeffisienten ble videoanalyse-programvaren Tracker og et høyhastighetskamera brukt for å analysere bevegelsen til klossene. Ved å finne akselerasjonen kan friksjonskoeffisienten estimeres gjennom Newtons II lov. Målingene ble gjenntatt flere ganger for å verifisere og ta høyde for usikkerhet.\\
-\\Kalkuleringene som ble foretatt viser til en friksjonskoeffisient mellom nylon og skråplanet i tre på 0.232$\pm 0.026$, og 0.270 $\pm 0.020$ mellom plast og tre. Akselerasjonen som ble målt med vinkel $\theta = 12.4$ ga en akselerasjon på 0,02 $[m/s^2]$.
+Formålet med laben var å regne seg frem til den horisontale vinkelen til et skråplan som gjør at et system bestående av to masser sklir med konstant hastighet. Friksjonskoeffisienten estimeres ved hjelp av Newtons II lov og videoanalyse-prgrammvaren Tracker. Målingene ble gjenntatt flere ganger for å verifisere og ta høyde for usikkerhet.\\
+\\Kalkuleringene som ble foretatt viser til en friksjonskoeffisient mellom nylon og skråplanet i tre på 0.232 $\pm$ $0.026$, og 0.270 $\pm$ $0.020$ mellom plast og tre. Akselerasjonen som ble målt med vinkel $\theta = 12.4$ ga 0,02 $[m/s^2]$.
 
-
-
-%\chapter*{Innledning}
 {\let\clearpage\relax\chapter*{Innledning}}
 \addcontentsline{toc}{chapter}{Innledning}
-\section*{Teori}
+I dette forsøket var formålet å bli kjent med hvordan en utfører eksperimentelle forsøk i fysikken, og å bli kjent med å skrive lab-journal og rapport. Ved hjelp av regresjoner av bevegelsen til en kloss som analyseres i Trasker kan en finne akselerasjonen, og så regne seg fram til friksjonskoeffisienten. Deretter settes det opp likninger for et massesystem og en kan regne ut vinkelen som fører til konstant hastighet.
+
+
+{\let\clearpage\relax\chapter*{Teori}}
+\addcontentsline{toc}{chapter}{Teori}
 Basert på Newtons II lov som i likning (2): 
 \begin{equation}
 \sum{F} = m \cdot a,
@@ -57,16 +57,33 @@ ved å sette opp likning (1) for Figur 3 fås likning (3). Ved hjelp av likning 
 \begin{equation}
 \mu = \tan(\theta)-a/(\cos(\theta)\cdot g),
 \end{equation}
-$\theta$ er vinkelen mellom skråplanet og et horisontalt plan, $g$ er gravitasjonsakselerasjonen. Ved hjelp av denne liknignen kan man regne ut friksjonskoeffisienten for de forskjellige akselerasjonsmålingene. For å regne seg fram til vinkelen mellom horisontalplanet og skråplanet, $\theta$, som gjør at klossene med masser $m_1$ og $m_2$ sklir med konstant fart ned langs skråplanet på et gitt underlag med friksjonskoeffisienter, $\mu_1$ og $\mu_2$ settes likning (1) opp for et system bestående av to masser, som vist i Figure (3). Det antas her at de to massene er bunnet sammen med en masseløs snor, som forblir stram.
+$\theta$ er vinkelen mellom skråplanet og et horisontalt plan, $g$ er gravitasjonsakselerasjonen. Ved hjelp av denne liknignen kan en regne ut friksjonskoeffisienten for de forskjellige akselerasjonsmålingene. For å regne seg fram til vinkelen,$\theta$, mellom horisontalplanet og skråplanet, som gjør at massesystemet sklir med konstant fart ned langs skråplanet på et gitt underlag settes likning (1) opp for et system bestående av to masser, som vist i Figure \ref{oppsett}. Det antas her at de to massene er bunnet sammen med en masseløs snor, som forblir stram og at snorkreftene er like store.
 \begin{equation}
 F_{xm1} - F_{rm1} + F_{xm2} - F_{rm2} = m \cdot a,
 \end{equation}
 løser for vinkelen, $\theta$, der vi bruker $a = 0$, 
 \begin{equation}
-\theta = \arctan(\frac{\mu_1 \cdot m_1+\mu_2 \cdot m_2}{m_1+m_2})
+\theta = \arctan(\frac{\mu_1 \cdot m_1+\mu_2 \cdot m_2}{m_1+m_2}),
 \end{equation}
-\\
-\\I dette forsøket var formålet å bli kjent med hvordan man utfører eksperimentelle forsøk i fysikken, og å bli kjent med å skrive lab-journal og rapport. Vi har lært mye om usikkerhet og hvordan feil i det tekniske utstyret kan føre til følgefeil.
+
+
+\begin{figure}
+der $m_1$ og $m_2$ er massene til klossene med tilhørende friksjonskoeffisienter $\mu_1$ og $\mu_2$.
+\begin{center}
+\includegraphics[scale=0.5]{withforces}
+\caption{Illustrasjon av oppsettet, der $F_n$ er normalkraften fra skråplanet på klossen, $F_r$ er friksjonskraften mellom klossen og underlaget, og $-mg$ er gravitasjonskraften.}
+\end{center}
+\label{oppsett}
+\end{figure}
+
+For å finne middelverdien til de utregnede friksjonskoeffisientene ble likningen
+\begin{equation}
+\overline{\mu} = \dfrac{1}{n}\sum_{i=1}^{n}\mu_i
+\end{equation}
+ der $n$ er antall målinger, brukt. Videre ble usikkerheten i middelverdien regnet ut ved følgende likning,
+\begin{equation}
+\delta\overline{\mu} = \dfrac{\delta\mu}{\sqrt{n}}.
+\end{equation}
 
 \chapter*{Metoder og eksperiment}
 \addcontentsline{toc}{chapter}{Metoder og eksperiment}
@@ -96,13 +113,6 @@ Forsøket ble gjennomført ved å først stille inn skråplanet til en vilkårli
 \\Til slutt ble optimal vinkel kalkulert med 10g vekter og 50g vekter lagt på hver av klossene. Da friksjonskoeffesientene var til underlagene var funnet i de forrige eksperimentene, ble vinkelen kalkuklert med de samme formlene. Denne gangen ble det også målt kun en neglisjerbar akselerasjon.
 
 
-\begin{figure}
-\centerline{\includegraphics[scale=0.5]{withforces}}
-\caption{Illustrasjon av oppsettet.}
-\label{oppsett}
-\end{figure}
-
-
 {\let\clearpage\relax\chapter*{Resultater og diskusjon}}
 \addcontentsline{toc}{chapter}{Resultater og diskusjon}
 \section*{Resultater}
@@ -111,12 +121,12 @@ Nedenfor er resultatene som ble funnet ved å bruke Tracker til å finne akseler
 \begin{center}
 \begin{tablenotes}
  	\small
- 	\item Tabell 1, viser akselerasjon og utregnet friksjonskoeffisient for klosstypene på gitt underlag, der det ble gjennomført fire målinger for hver kombinasjon av klosstype og underlag. Merk at for måling 13 til 16 ble vinkelen økt for å få klossen til å slik. Ellers ble samme vinkel brukt i de resterende målingene, men usikkerheten ligger i oppsettet av målingene i Tracker.
+ 	\item Tabell 1, viser rådata for akselerasjon og utregnet friksjonskoeffisient for klosstypene på oppgitt underlag, der det ble gjennomført fire målinger for hver kombinasjon av klosstype og underlag. Merk at for måling 13 til 16 ble vinkelen økt for å få klossen til å slik. Ellers ble samme vinkel brukt i de resterende målingene, men usikkerheten ligger i oppsettet av målingene i Tracker.
  	\end{tablenotes}
   \begin{tabular}{| c | c | c | c | c | c |}
     \hline
-    Måling & Klosstype & Underlag & Akselerasjon $[m/s^2]$ & Vinkel [$^{\circ}$] & Friksjonskoeffisient | \\ \hline
-    1 & Messing & Nylon & 0.248 & 17.8 & 0.268 $\pm 0.026$ \\ \hline
+    Måling & Klosstype & Underlag & Akselerasjon $[m/s^2]$ & Vinkel [$^{\circ}$] & Friksjonskoeffisient \\ \hline
+    1 & Messing & Nylon & 0.248 & 17.8 & 0.268 \\ \hline
     2 & Messing & Nylon & 0.412 & 16.9 & 0.216 \\ \hline
     3 & Messing & Nylon & 0.370 & 16.8 & 0.223 \\ \hline
     4 & Messing & Nylon & 0.366 & 16.7 & 0.222 \\ \hline
@@ -135,6 +145,7 @@ Nedenfor er resultatene som ble funnet ved å bruke Tracker til å finne akseler
   \end{tabular}
 \end{center}
 
+Ved å bruke likning (7) og (8) ble så rådata omregnet til gjennomsnittlige verdier med usikkerhet.
 
 \begin{center}
  \begin{tablenotes}
@@ -143,15 +154,15 @@ Nedenfor er resultatene som ble funnet ved å bruke Tracker til å finne akseler
  	\end{tablenotes}
   \begin{tabular}{| c | c | c | c | c |}
     \hline
-    Klosstype & Underlag & Akselerasjon $\pm \delta A$ $[m/s^2]$ & Vinkel $\pm \delta V$ [$^{\circ}$] & Friksjonskoeffisient | \\ \hline
-    Messing & Nylon & 0.349 $\pm 0.082$ & 17.1 $\pm 0.6$ & 0.232 $\pm 0.026$ \\ \hline
-    Aluminium & Nylon & 0.310 $\pm 0.023$ & 17.3 $\pm 0.5$ & 0.246 $\pm 0.011$\\ \hline
-    Messing & Plast & 0.255 $\pm 0.074$ & 18.2 $\pm 0.5$ & 0.270 $\pm 0.020$\\ \hline
-    Aluminium & Plast & 0.547 $\pm 0.174$ & 25.3 $\pm 0.6$ & 0.350 $\pm 0.035$\\ \hline
+    Klosstype & Underlag & Akselerasjon $\pm$ $\delta A$ $[m/s^2]$ & Vinkel $\pm$ $\delta V$ [$^{\circ}$] & Friksjonskoeffisient $\pm$ $\delta \mu$ \\ \hline
+    Messing & Nylon & 0.349 $\pm$ $0.082$ & 17.1 $\pm$ $0.6$ & 0.232 $\pm$ $0.082$ \\ \hline
+    Aluminium & Nylon & 0.310 $\pm$ $0.023$ & 17.3 $\pm$ $0.5$ & 0.246 $\pm$ $0.086$\\ \hline
+    Messing & Plast & 0.255 $\pm$ $0.074$ & 18.2 $\pm$ $0.5$ & 0.270 $\pm$ $0.095$\\ \hline
+    Aluminium & Plast & 0.547 $\pm$ $0.174$ & 25.3 $\pm$ $0.6$ & 0.350 $\pm$ $0.126$\\ \hline
   \end{tabular}
 \end{center}
 
-Ved å sette verdiene for snitt, med usikkerhet inn i linkning (6), og få følgende verdier for vinkelen, $\theta$, for det sammensatte systemet:
+Verdiene for gjennomsnittlig friksjonskoeffisient ble så satt inn i likning (6), for å få verdier for vinkelen, $\theta$, som skulle gi konstant hastighet for det sammensatte systemet.
 
 \begin{center}
      \begin{tablenotes}
@@ -167,16 +178,16 @@ Ved å sette verdiene for snitt, med usikkerhet inn i linkning (6), og få følg
     Plast & Nylon & 14.7 $\pm$ 1.5  \\ \hline
   \end{tabular}
 \end{center}
-Testing av utregnede verdier på et massesystem som vist i Figure 3 ga oss følgende akselerasjoner:
+Tabellen nedenfor viser at dersom en tok den minste vinkelen som var innenfor usikkerheten, så ble akselerasjonen til systemet nesten lik null.
 
 \begin{center}
      \begin{tablenotes}
  	\small
- 	\item Tabell 4, viser resultatene fra målingene som ble gjennomført på klosser med gitt vekt og utregnet friksjonskoeffisient og vinkel for konstant akselerasjon, altså ingen akselerasjon. Underlaget var likt for begge klossene.
+ 	\item Tabell 4, viser resultatene fra målingene som ble gjennomført på klosser med gitt vekt og utregnet friksjonskoeffisient og vinkel for konstant hastighet, altså ingen akselerasjon. 
  	\end{tablenotes}
   \begin{tabular}{| c | c | c | c | c  | c |}
     \hline
-    Underlag kloss 1 & Underlag kloss 2 & Vekt kloss 1 [kg] & Vekt kloss 2 [kg] & Vinkel $\theta$ & Akselerasjon $[m/s^2]$ | \\ \hline
+    Underlag kloss 1 & Underlag kloss 2 & Vekt kloss 1 [kg] & Vekt kloss 2 [kg] & Vinkel $\theta$ & Akselerasjon $[m/s^2]$ \\ \hline
     Nylon & Nylon & 0.022 & 0.0687 & 12.8 & 0.12 \\ \hline
     Nylon & Plast & 0.0242 & 0.0687 & 16.0 & 0.02 \\ \hline
     Plast & Nylon & 0.0343 & 0.1197 & 13.3 & 0.04 \\ \hline
@@ -184,15 +195,16 @@ Testing av utregnede verdier på et massesystem som vist i Figure 3 ga oss følg
   \end{tabular}
 \end{center}
 
+
 \section*{Diskusjon og feilkilder}
 \addcontentsline{toc}{section}{Diskusjon og feilkilder}
-Som en ser i resultatene ovenfor, så ga alle de teoretisk utregnede verdiene en vinkel som var for stor, noe som førte til at klossene akselererte nedover skråplanet. En feilkilde som ble observert mens testene ble gjennomført var at klossene beveget seg litt hakkete nedover skråplanet. Dette er mest sannsynlig forårsaket ved at skråplanet ikke har helt homogen overflate, noe som gjør at friksjonskoeffisientene endrer seg nedover langs skråplanet. Klossene ble ikke alltid sluppet på akuratt samme sted, da skråplanet var forholdsvis bredt, og overflaten kan også være forskjellig i bredden, noe som kan ha forårsaket feil i målingne. Ut ifra likning (3) ser man også at vinkelen, $\theta$ har mye å si, og dette ble også observert ved de initielle målingene. Vateret ble brukt til å finne nøyaktig horisontal posisjon var svært viktig, men her kan det fortsatt være noe usikkerhet, med tanke på hvordan det ble overført til Tracker.\\\\
-Måling 13 til og med 16 i Tabell 1, gir større verdier for friksjonskoeffisienten enn målingene 9 til 12 i samme tabell. Det ble også observert at klossen i måling 13 til 16 hadde høyere hastighet. Her er både klossen og vinkelen endret. Vel å merke her er at det er forskjell på friksjon avhengig av hastighet mellom de to underlagene. Det vil si at det for plasten var en annen friksjonskoeffisient ved høyere hastigheter enn ved lavere hastigheter. Fordi resultatene viser at friksjonskoeffisienten endrer seg med hastigheten, og formålet er å finne friksjonskoeffisienten ved konstant hastighet, så kunne det vært lurt å utføre målingene med så jevn hastighet som mulig, for at friksjonskoeffisienten skal være så lik som mulig. Etter å ha sammenliknet friksjonskoeffisienten for metall og tre, som ble målt initielt, med verdier funnet på internett [1], kan man konkludere med at målingene for friksjonskoeffisientene ligger innenfor det område som kan forventes.\\\\
+Som en ser i resultatene ovenfor, så ga alle de teoretisk utregnede verdiene en vinkel som var for stor, noe som førte til at klossene akselererte nedover skråplanet. En feilkilde som ble observert mens testene ble gjennomført var at klossene beveget seg litt hakkete nedover skråplanet. Dette er høyst sannsynlig forårsaket ved at skråplanet ikke har helt homogen overflate, noe som gjør at friksjonskoeffisientene endrer seg nedover langs skråplanet. Klossene ble ikke alltid sluppet på akuratt samme sted, da skråplanet var forholdsvis bredt, og overflaten kan også være forskjellig i bredden, noe som kan ha forårsaket feil i målingne. Ut ifra likning (3) ser en også at vinkelen, $\theta$ har mye å si, dette ble også observert ved de initielle målingene. At vateret ble brukt til å finne nøyaktig horisontal posisjon var svært viktig, men her kan det fortsatt være noe usikkerhet, med tanke på hvordan det ble overført til Tracker.\\\\
+Måling 13 til og med 16 i Tabell 1, gir større verdier for friksjonskoeffisienten enn målingene 9 til 12 i samme tabell. Det ble også observert at klossen i måling 13 til 16 hadde høyere hastighet. Her er både klossen og vinkelen endret. Vel å merke her er at det er forskjell på friksjon avhengig av hastighet mellom de to underlagene. Det vil si at det for plasten var en annen friksjonskoeffisient ved høyere hastigheter enn ved lavere hastigheter. Fordi resultatene viser at friksjonskoeffisienten endrer seg med hastigheten, og formålet er å finne friksjonskoeffisienten ved konstant hastighet, så kunne det vært lurt å utføre målingene med så jevn hastighet som mulig, for at friksjonskoeffisienten skal være så lik som mulig det den er ved konstant hastighet. Etter å ha sammenliknet friksjonskoeffisienten for metall og tre, som ble målt initielt, med verdier funnet på internett [1], kan en konkludere med at målingene for friksjonskoeffisientene ligger innenfor det område som kan forventes.\\\\
 En annen ting som ble observert i målingene som ble gjennomført helt i starten av en kloss i fritt fall, var at selv om klossen falt fritt, så stemte ikke alltid akselerasjonsverdiene som ble funnet i Tracker. Verdiene for gravitasjonsakselerasjonen lå i nærheten av det en skulle forvente, men at verdiene hadde en usikkerhet på rundt $\pm$ 20$\%$. Derfor ble det tatt totalt 8 målinger av hver stofftype, men for enda mer presise resultater kunne det blitt gjort en rekke flere målinger.
 
 {\let\clearpage\relax\chapter*{Konklusjon}}
 \addcontentsline{toc}{chapter}{Konklusjon}
-Hypotesen vår var at det var mulig å finne en optimal vinkel for konstant hastighet, noe som kan konkluderes med at ble oppnådd, da hastigheten var nesten konstant, med akselerasjoner på mellom 0.12 $[m/s^2]$ til 0.02 $[m/s^2]$. Det var en del feilkilder som gjorde at resultatene våre ikke ble slik som forventet, dette gjelder blandt annet uhomogen overflate på skråplanet, regresjon i Tracker og unøyaktigheter i oppsett av måling i Tracker. Det opplevdes ofte at den kalkulerte vinkelen var for høy. Utfordringen hvor det ble bedt om å finne vinkel til to forskjellige masser med eget valg av friksjonsunderlag ble også løst, dog med samme problem der planet måtte senkes et par grader fra de estimerte verdiene.
+Hypotesen vår var at det var mulig å finne en optimal vinkel for konstant hastighet for et massesystem med gitt underlag, noe som kan konkluderes med at ble oppnådd, da hastigheten var nesten konstant, med akselerasjoner på mellom 0.12 $[m/s^2]$ til 0.02 $[m/s^2]$. Det var en del feilkilder som gjorde at resultatene våre ikke ble slik som forventet, dette gjelder blandt annet uhomogen overflate på skråplanet, regresjon i Tracker og unøyaktigheter i oppsett av måling i Tracker. Det opplevdes ofte at den kalkulerte vinkelen var for høy.
 
 \chapter*{Referanser}
 [1] \href{url}{https://en.wikipedia.org/wiki/Friction}
