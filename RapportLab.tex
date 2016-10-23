@@ -85,15 +85,13 @@ For å finne middelverdien til de utregnede friksjonskoeffisientene ble likninge
 \delta\overline{\mu} = \dfrac{\delta\mu}{\sqrt{n}}.
 \end{equation}
 
-\chapter*{Metoder og eksperiment}
-\addcontentsline{toc}{chapter}{Metoder og eksperiment}
-\section*{Metode}
-\addcontentsline{toc}{section}{Metode}
+\chapter*{Fremgangsmåte}
+\addcontentsline{toc}{chapter}{Fremgangsmåte}
 \subsection*{Forberedelse}
 \addcontentsline{toc}{subsection}{Forberedelse}
-Et skjematisk oppsett av eksperimentet er vist i Figure \ref{oppsett}. Treplanken ble festet til et stativ med en klype. Det ble brukt vater for å påse at skråplanets vinkel blir målt normalt til tyngekraften. Foran oppsettet ligger det en meterstokk, noe som gjør det enkelt å kalibrere størrelsesforhold i programvaren Tracker. Høyhastighetskameraet er montert normalt på oppsettet, slik at vinkling på kameraet ikke påvirker størrelsene som måler. To forskjellige typer underlag ble brukt, som vist i Figure \ref{fig:1} og Figure \ref{fig:2}. De forskjellige underlagene ble festet på klosser av aluminium og messing ved hjelp av lærertyggis.\\
-\\Som foreberedelse til laben ble likningene til laben utledet, beskrevet under seksjonen "Teori." Repetitive kalkulasjoner ble utført ved hjelp av et digital regneark. Innstillingene på høyhastighetskameraet ble tilpasset lysforholdene på laben. Dette resulterte i at det ble brukt 100fps med automatisk hvitbalanse.\\
-\\En rekke eksperimenter ble fullført for å verifisere at utstyret fungerte. Ved hjelp av en vekt ble de to massenes vekt målt tre ganger. Gjennomsnittet av de tre målingene verifiserte at målingene var representative tall for vekten til massene. En av vektene ble sluppet foran en hvit vegg mens kameraet filmet. Dette filmklippet ble importert i Tracker. Ved hjelp av regresjonsfunksjonen i programmet ble integriteten til utstyret verifisert da denne gav 9.81 m/s$^2$ som akselerasjon.
+Et skjematisk oppsett av eksperimentet er vist i Figure 3. Treplanken ble festet til et stativ med en klype. Det ble brukt vater for å påse at skråplanets vinkel blir målt normalt til tyngekraften. Foran oppsettet ligger det en meterstokk, noe som gjør det enkelt å kalibrere størrelsesforhold i programvaren Tracker. Høyhastighetskameraet er montert normalt på oppsettet, slik at vinkling på kameraet ikke påvirker størrelsene som måler. To forskjellige underlag ble festet til henholdsvis en aluminium- og messingkloss. Figure 1 og Figure 2 viser de forskjellige underlagene.\\
+\\Som foreberedelse til laben ble likningene til laben utledet. Innstillingene på høyhastighetskameraet ble tilpasset lysforholdene på laben. Dette resulterte i at det ble brukt 100fps med automatisk hvitbalanse.\\
+\\Ved hjelp av en vekt ble de to massenes vekt målt tre ganger. Gjennomsnittet av de tre målingene verifiserte at målingene var representative tall for vekten til massene. En av vektene ble sluppet foran en hvit vegg mens kameraet filmet og deretter importert i Tracker. Ved hjelp av regresjonsfunksjonen i programmet ble integriteten til utstyret verifisert da denne gav 9.81 m/s$^2$ som akselerasjon.
 
 \begin{figure}
     \centerline{\includegraphics[scale=0.05]{BlaaPlast}}
@@ -108,9 +106,9 @@ Et skjematisk oppsett av eksperimentet er vist i Figure \ref{oppsett}. Treplanke
 
 \subsection*{Forsøk}
 \addcontentsline{toc}{subsection}{Forsøk}
-Forsøket ble gjennomført ved å først stille inn skråplanet til en vilkårlig vinkel. Med en linjal ble det tatt målinger av lengden og høyden av skråplanet, og brukte den inverse tangensen for å kalkulere vinkelen. Messingklossen ble sluppet 4 ganger nedover skråplanet, og importert i Tracker for å tilpasse akselerasjon. Ved hjelp av regnearket vårt og formlene definert ovenfor, ble friksjonskoeffesienten for klossen kalkulert. Dette ble gjentatt med aluminiumsklossen, og deretter med både nylonbiten og plastbiten som underlag. \\
-\\De kalkulerte friksjonskoeffesientene for underlagene ble brukt til å beregne den vinkelen hvor begge klossene sklei ned med konstant hastighet. Klossene ble bundet sammen med en snor, og sluppet ned skråplanet. Tracker genererte en regresjon med en neglisjerbar akselerasjon, som bekreftet antagelsene. Dette gjøres med et gjenkjenningssystem i Tracker som automatisk gjenkenner klossene nedover skråplanet, og lager en punktgraf som kan brukes til å tilpasse en regresjon av typen andreordens polynom.\\
-\\Til slutt ble optimal vinkel kalkulert med 10g vekter og 50g vekter lagt på hver av klossene. Da friksjonskoeffesientene var til underlagene var funnet i de forrige eksperimentene, ble vinkelen kalkuklert med de samme formlene. Denne gangen ble det også målt kun en neglisjerbar akselerasjon.
+Forsøket ble gjennomført ved å først stille inn skråplanet til en vilkårlig vinkel. Med en linjal ble det tatt målinger av lengden og høyden av skråplanet som ble brukt til å bestemme vinkelen. Messingklossen ble sluppet 4 ganger nedover skråplanet, og importert i Tracker for å tilpasse akselerasjon. Friksjonskoeffesienten ble kalkulert ved hjelp av likning 3. Dette ble gjentatt med aluminiumsklossen, og deretter med både nylonbiten og plastbiten som underlag. \\
+\\De kalkulerte friksjonskoeffesientene for underlagene ble brukt til å beregne den vinkelen hvor begge klossene sklei ned med konstant hastighet. Klossene ble bundet sammen med en snor, og sluppet ned skråplanet.\\
+\\Til slutt ble optimal vinkel kalkulert med 10 g vekter og 50 g vekter lagt på hver av klossene. Da friksjonskoeffesientene var til underlagene var funnet i de forrige eksperimentene, ble vinkelen kalkuklert med de samme formlene. Denne gangen ble det også målt kun en neglisjerbar akselerasjon.
 
 
 {\let\clearpage\relax\chapter*{Resultater og diskusjon}}
