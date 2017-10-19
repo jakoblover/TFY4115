@@ -1,0 +1,10 @@
+\contentsline {chapter}{Sammendrag}{2}{chapter*.1}
+\contentsline {chapter}{Innledning}{2}{chapter*.2}
+\contentsline {chapter}{Teori}{2}{chapter*.3}
+\contentsline {chapter}{Fremgangsm\IeC {\r a}te}{4}{chapter*.5}
+\contentsline {subsection}{Forberedelse}{4}{section*.6}
+\contentsline {subsection}{Fors\IeC {\o }k}{4}{section*.8}
+\contentsline {chapter}{Resultater og diskusjon}{5}{chapter*.9}
+\contentsline {section}{Resultater}{5}{section*.10}
+\contentsline {section}{Diskusjon og feilkilder}{6}{section*.11}
+\contentsline {chapter}{Konklusjon}{6}{chapter*.12}
